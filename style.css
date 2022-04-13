@@ -20,10 +20,10 @@
 
 .box{
     position: relative;
-    width: 565px;
-    height: 400px;
-    top: -20%;
-    margin-right: 15%;
+    width: 307px;
+    height: 392px;
+    top: -15%;
+    right: 10%;
 }
 
 .box .carte{
@@ -100,6 +100,7 @@ a{
     position: relative;
     width: 160px;
     height: 50px;
+    right: 43%;
     margin: 15px 10px;
     background: #fff;
     text-decoration: none;
@@ -192,7 +193,7 @@ a:hover span:nth-child(2){
 
 .container{
     position: relative;
-    width: 1100px;
+    width: 800px;
     height: 400px;
 }
 
@@ -201,15 +202,15 @@ a:hover span:nth-child(2){
     top: calc(50% - 250px);
     left: 50%;
     transform: translate(-50%,calc(30px * var(--i))) rotate(50deg) skew(-20deg, -10deg);
-    width: 150px;
-    height: 200px;
-    background: #fff;
+    width: 350px;
+    height: 250px;
+    background: url(img.png);
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 25px 25px 100px rgba(0, 0, 0, 0.2);
     z-index: calc(-1 * var(--i));
-    transition: 0.5s;
+    transition: 1s;
 }
 
 .container .card:nth-child(1){
@@ -219,7 +220,6 @@ a:hover span:nth-child(2){
 .container .card:nth-child(2){
     opacity: 0.8;
 }
-
 
 .container .card:nth-child(3){
     opacity: 0.6;
@@ -234,23 +234,23 @@ a:hover span:nth-child(2){
 }
 
 .container:hover .card:nth-child(4){
-    transform: translate(calc(50% + calc(0px * var(--i))),30%) rotate(0deg) skew(0deg, 0deg);
+    transform: translate(calc(25% + calc(0px * var(--i))),30%) rotate(0deg) skew(0deg, 0deg);
     
 }
 
 .container:hover .card:nth-child(5){
-    transform: translate(calc(-150% + calc(0px * var(--i))),30%) rotate(0deg) skew(0deg, 0deg); 
+    transform: translate(calc(-125% + calc(0px * var(--i))),30%) rotate(0deg) skew(0deg, 0deg); 
 }
 
 
 .container:hover .card{
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     z-index: 1;
     opacity: 1;
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
-    transform: translate(calc(-50% + calc(250px * var(--i))),-100%) rotate(0deg) skew(0deg, 0deg);
+    transform: translate(calc(-50% + calc(450px * var(--i))),-100%) rotate(0deg) skew(0deg, 0deg);
     
     
 
@@ -260,15 +260,16 @@ a:hover span:nth-child(2){
     color: #444;
     opacity: 0;
     transition: 0.5s;
-    transform: translateY(50px) ;
+    transform: translateY(50px);
     padding: 25px;
-    text-align: center;
+    text-align: flex-end;
     font-size: 0.7em;
+    width: 50%;
 
 }
 
 .container:hover .card .content{
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(0px) translateX(40%);
     transition-delay: calc(0.2s * var(--j));
 }
