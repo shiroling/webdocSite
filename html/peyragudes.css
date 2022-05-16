@@ -1,0 +1,13 @@
+ /*14/01/2021*/ 
+
+@import "../style_dark.css";
+
+.banner{
+    background: url(../img/bg-peyragudes.jpg);
+    background-size: cover;
+}
+
+.testimonials{
+    background: url(../img/bg2-peyragudes.jpg);
+    background-size: cover;
+}
