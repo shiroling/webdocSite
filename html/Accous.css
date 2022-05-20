@@ -1,0 +1,14 @@
+@import "../style_dark.css";
+
+.banner{
+    background: url(../img/imagedebut.jpg);
+    background-size: cover;
+}
+
+.testimonials{
+    background: url(../img/bg-accous.JPG);b
+    background-size: cover;
+}
+.banner .content {
+	padding:15px;
+}

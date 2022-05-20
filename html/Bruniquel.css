@@ -1,0 +1,19 @@
+@import "../style_dark.css";
+
+.banner{
+    background: url(../img/bruniquel1.jpeg);
+    background-size: cover;
+}
+
+.testimonials{
+    background: url(../img/bruniquel2.jpeg);
+    background-size: cover;
+}
+
+.banner .content {
+	padding:15px;
+}
+
+.testimonials .content .box .imgBx{
+    border-radius: 0%;
+}

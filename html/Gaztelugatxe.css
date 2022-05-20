@@ -1,0 +1,17 @@
+@import "../style_dark.css";
+
+.banner{
+    background: url(../img/gaztelugatxe.jpg);
+    background-size: cover;
+}
+
+.testimonials{
+    background: url(../img/gaztelugatxe2.jpg);
+    background-size: cover;
+}
+
+
+.banner .content {
+	padding:15px;
+}
+

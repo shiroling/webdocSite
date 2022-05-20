@@ -11,7 +11,63 @@
     scroll-behavior: smooth;
 }
 
+
+/* --- MENU --- */
+
+
+
+nav ul{
+	list-style-type: none;
+}
+
+nav li{
+	float: left;
+	width: 20%;
+	text-align: center;
+}
+
+nav ul::after{
+	content: "";
+	display:table;
+	clear: both;
+}
+
+nav{
+	width: 100%;
+	margin: 0 auto;
+	position: sticky;
+	top: 10px;
+	background-color: #1E1D2F;
+}
+
+nav a{
+	font-weight:bold;
+	display:block;
+	text-decoration:none;
+	color:white;
+	border-bottom:2px solid transparent;
+	padding: 10px 0px;
+}
+
+nav a:hover{
+	color:white;
+	border-bottom; 2 px solid gold;
+}
+
+nav ul li{
+	float:left;
+	width:20%;
+	text-align:center;
+	position:relative;
+}
+
+a{
+	color:#d7d3e1;
+	font-style: italic;
+}
+
 p{
+	text-align:justify;
     font-weight: 300;
     color: #d7d3e1;
 }
@@ -38,12 +94,13 @@ body{
     max-width: 900px;
     text-align: center;
     background-color: #ffffffb3;
+    padding: 20px;
 }
 
 .banner .content h2{
     font-size: 4em;
     color: #111;
-
+	margin-top:10px;
 }
 
 .banner .content p{
@@ -54,10 +111,10 @@ body{
 .but{
     font-size: 1em;
     color: #d7d3e1;
-    background: #15359c;
+    background: #3E4058;
     display: inline-block;
     padding: 10px 30px;
-    margin-top: 20px;
+    margin: 20px;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px;
@@ -102,7 +159,7 @@ header.sticky .logo{
 }
 
 header .logo span{
-    color: #15359c;
+    color: #3E4058;
 }
 
 header .navigation{
@@ -126,7 +183,7 @@ header.sticky .navigation li a{
 }
 
 header .navigation li a:hover{
-    color: #15359c;
+    color: #3E4058;
 }
 
 section{
@@ -251,9 +308,6 @@ section{
     border-top: 1px solid rgba(0,0,0,0.1);
     text-align: center;
     background-color: #1E1D2F;
-}
-
-.copyrightText p{
     color: #d7d3e1;
 }
 
@@ -263,11 +317,7 @@ section{
     text-decoration: none;
 }
 
-.copyrightText ul{
-    text-align: left;
-    margin-left: 300px;
-    color: #d7d3e1;
-}
+
 
 @media (max-width: 991px){
     header,
@@ -361,6 +411,7 @@ section{
     .banner .content h2{
         font-size: 2.2em;
         color: #d7d3e1;
+		margin-top:10px;
     }
 }
 
@@ -369,7 +420,7 @@ section{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #15359c;
+    background: #3E4058;
 }
 
 .container{
@@ -467,4 +518,9 @@ section{
     opacity: 1;
     transform: translateY(0px) translateX(10%);
     transition-delay: calc(0.2s * var(--j));
+}
+
+#cp-text {
+    text-align: right;
+    
 }
